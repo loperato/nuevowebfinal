@@ -1,3 +1,4 @@
+# Etapa base
 FROM node:20-alpine AS base
 
 # Instalar pnpm
@@ -16,7 +17,7 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY next.config.ts tsconfig.json ./
 
 # Instalar dependencias con caché optimizado
-RUN --mount=type=cache,id=us-east4:pnpm-store,target=/pnpm/store \
+RUN --mount=type=cache,id=buildkit.pnpm-store,target=/pnpm/store \
     pnpm install --frozen-lockfile
 
 # Copiar el resto de archivos
@@ -28,6 +29,7 @@ RUN pnpm build
 # Etapa de producción
 FROM node:20-alpine AS production
 
+# Establecer directorio de trabajo
 WORKDIR /app
 
 # Instalar pnpm
