@@ -1,0 +1,6 @@
+node_modules
+pnpm-workspace.yaml
+src/app/en/resources/page.tsx
+src/app/es/products/page.tsx
+src/app/es/resources/page.tsx
+src/app/es/technology/page.tsx

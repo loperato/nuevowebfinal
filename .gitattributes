@@ -1,0 +1,13 @@
+# Establecer el manejo automático de line endings
+* text=auto eol=lf
+
+# Definir archivos binarios que no deben ser modificados
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.webp binary
