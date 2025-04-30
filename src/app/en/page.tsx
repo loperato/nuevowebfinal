@@ -28,7 +28,7 @@ export default function HomePage() {
         <section className="relative h-screen">
           <div className="absolute inset-0 z-0">
             <Image 
-              src="/images/hero.png" 
+              src="/images/lithium-battery.png" 
               alt="EfireX TRPL-E extinguishing lithium battery fire" 
               fill 
               style={{ objectFit: 'cover' }}
