@@ -20,7 +20,6 @@ const navItems: NavItem[] = [
   { label: { en: 'Why EfireX?', es: '¿Por qué EfireX?' }, href: '/why-efirex' },
   { label: { en: 'Certifications', es: 'Certificaciones' }, href: '/certifications' },
   { label: { en: 'Resources', es: 'Recursos' }, href: '/resources' },
-  { label: { en: 'Contact', es: 'Contacto' }, href: '/contact' },
 ];
 
 export default function Navbar({ locale }: NavbarProps) {
@@ -30,7 +29,7 @@ export default function Navbar({ locale }: NavbarProps) {
     <nav className="bg-blue-900 text-white">
       <div className="container-custom flex justify-between items-center py-4">
         <Link href={`/${locale}`} className="text-2xl font-bold">
-          Efirex
+          Lithium Extinguisher
         </Link>
         
         <div className="hidden md:flex space-x-6">
@@ -51,13 +50,6 @@ export default function Navbar({ locale }: NavbarProps) {
             className="text-sm hover:text-amber-400 transition-colors"
           >
             {otherLocale === 'en' ? 'English' : 'Español'}
-          </Link>
-          
-          <Link 
-            href={`/${locale}/buy-now`} 
-            className="btn-primary"
-          >
-            {locale === 'en' ? 'Buy Now' : 'Comprar Ahora'}
           </Link>
           
           {/* Mobile menu button */}

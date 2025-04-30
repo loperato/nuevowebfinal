@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const montserrat = Montserrat({ 
   subsets: ["latin"],
@@ -9,8 +10,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "EfireX TRPL-E | Innovative Fire Safety Solutions",
-  description: "EfireX TRPL-E is a revolutionary mineral encapsulator agent designed to suppress lithium battery fires with superior cooling power.",
+  title: "Lithium Extinguisher | Innovative Fire Safety Solutions",
+  description: "Lithium Extinguisher is a revolutionary mineral encapsulator agent designed to suppress lithium battery fires with superior cooling power.",
 };
 
 export default function RootLayout({
@@ -20,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cma1casin0ko9s5k3037hb2qm" />
+      </head>
       <body className={`${montserrat.variable} font-sans`}>
         {children}
       </body>
