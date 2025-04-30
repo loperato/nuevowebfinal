@@ -1,6 +1,6 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import Chatbot from '@/components/chatbot/Chatbot';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -236,7 +236,7 @@ export default function ContactPage() {
       </main>
       
       <Footer locale={locale} />
-      <Chatbot locale={locale} />
+      
     </div>
   );
 }
